@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Pet Management System</title>
 </head>
-<body>
-    
+<body >
+    <!-- navbar  -->
+    <header class="px-4 lg:px-8 xl:px-8">
+        <nav>
+            <div
+                class="navbar flex justify-between flex-row-reverse md:flex-row bg-white md:bg-orange-500 rounded-full my-6 md:py-4 ">
+
+                <div class="md:hidden flex-row-reverse">
+                    <button class="btn btn-ghost normal-case text-black">
+                        <span class="icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 ">
+                    <a class="btn btn-ghost text-lg text-white font-medium">Home</a>
+                    <a class="btn btn-ghost text-lg text-white font-medium">About Us</a>
+                    <a class="btn btn-ghost text-lg text-white font-medium">Packages</a>
+                </div>
+
+                <div class="flex justify-between flex-row-reverse">
+
+                    <a class="btn btn-ghost normal-case text-4xl text-black font-serif font-bold">
+                         Policy Bazzar 
+                    </a>
+                </div>
+
+                <div class="hidden md:inline form-control ">
+                    <input type="text" placeholder=" Search here"
+                        class="input input-bordered md:w-auto rounded-3xl" style="font-family: lato;" />
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
