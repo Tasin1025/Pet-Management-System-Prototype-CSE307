@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&family=Noto+Color+Emoji&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        .main-text {
+            
+            font-family: 'Pacifico', cursive;
+            letter-spacing: 2px;
+        }
+        * {
+            font-family: 'Kaushan Script', sans-serif;
+            
+        }
+        .game-buttons>button {
+            color: #0B0223;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 50px;
+            border: 2px solid #fff;
+            margin: 10px;
+            padding: 10px;
+        }
+        .game-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
     <title>Pet Management System</title>
 </head>
 <body >
@@ -25,22 +61,33 @@
                 <div class="hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 ">
                     <a class="btn btn-ghost text-lg text-white font-medium">Home</a>
                     <a class="btn btn-ghost text-lg text-white font-medium">About Us</a>
-                    <a class="btn btn-ghost text-lg text-white font-medium">Packages</a>
+                    <a class="btn btn-ghost text-lg text-white font-medium">Shop</a>
+                    <a class="btn btn-ghost text-lg text-white font-medium">Vet</a>
                 </div>
 
                 <div class="flex justify-between flex-row-reverse">
 
-                    <a class="btn btn-ghost normal-case text-4xl text-black font-serif font-bold">
-                         Policy Bazzar 
+                    <a class="btn btn-ghost normal-case text-4xl text-black main-text ">
+                        🐶 Pet Hub 🐮 
                     </a>
                 </div>
 
                 <div class="hidden md:inline form-control ">
                     <input type="text" placeholder=" Search here"
-                        class="input input-bordered md:w-auto rounded-3xl" style="font-family: lato;" />
+                        class="input input-bordered md:w-auto rounded-3xl" " />
                 </div>
             </div>
         </nav>
     </header>
+    <section class="game-buttons">
+        <button><img src="./images/Rectangle 11.png" alt="">Vet contact</button>
+        <button><img src="./images/Rectangle 12.png" alt="">Pet shop</button>
+        <button><img src="./images/Rectangle 13.png" alt="">Pharmacy</button>
+        <button><img src="./images/Rectangle 14.png" alt="">Pet grooming </button>
+        <button><img src="./images/Rectangle 15.png" alt="">Transportation </button>
+        <button><img src="./images/Rectangle 16.png" alt="">Pet Scanner </button>
+        <button><img src="./images/Rectangle 17.png" alt="">Reviews</button>
+        <button><img src="./images/Rectangle 18.png" alt="">Help center</button>
+    </section>
 </body>
 </html>
