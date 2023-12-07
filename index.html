@@ -11,58 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Luckiest+Guy&family=Noto+Color+Emoji&family=Oleo+Script&family=Pacifico&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="./pets.png" type="image/x-icon">
-    <style>
-        .main-text {
-            
-            font-family: 'Pacifico', cursive;
-            letter-spacing: 2px;
-        }
-        * {
-            font-family: 'Oleo Script', sans-serif;
-            font-weight: 200;
-            
-        }
-        .game-buttons>button:hover {
-            color: #0B0223;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            border-radius: 50px;
-            border: 2px solid #fff;
-            margin: 15px;
-            padding: 15px;
-        }
-        .game-buttons>button {
 
-            color: #0B0223;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 100;
-            line-height: normal;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            border-radius: 50px;
-            border: 2px solid #F97316;
-            margin: 15px;
-            padding: 15px;
-        }
-        .game-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 25px;
-            margin: 20px;
-        }
-        .game-buttons>button>img {
-            height: auto;
-            width: 3em;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+
     <title>Pet Hub - Pet Management System</title>
 </head>
 <body >
@@ -81,10 +32,10 @@
                 </div>
 
                 <div class="hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 ">
-                    <a class="btn btn-ghost text-lg text-white font-medium">Home</a>
-                    <a class="btn btn-ghost text-lg text-white font-medium">About Us</a>
-                    <a class="btn btn-ghost text-lg text-white font-medium">Shop</a>
-                    <a class="btn btn-ghost text-lg text-white font-medium">Vet</a>
+                    <a class="btn btn-ghost text-lg text-white font-medium"> Home</a>
+                    <a class="btn btn-ghost text-lg text-white font-medium"> About Us</a>
+                    <a class="btn btn-ghost text-lg text-white font-medium"> Shop</a>
+                    <a class="btn btn-ghost text-lg text-white font-medium"> Vet</a>
                 </div>
 
                 <div class="flex justify-between flex-row-reverse">
@@ -96,11 +47,12 @@
 
                 <div class="hidden md:inline form-control ">
                     <input type="text" placeholder=" Search here"
-                        class="input input-bordered md:w-auto rounded-3xl" " />
+                        class="input input-bordered md:w-auto rounded-3xl"/>
                 </div>
             </div>
         </nav>
     </header>
+  
     <section class="game-buttons">
         <button><img src="./veterinarian.png" alt="">Vet contact</button>
         <button><img src="./pet-shop.png" alt="">Pet shop</button>
@@ -122,7 +74,7 @@
             </p>
         </div>
         <!-- cards -->
-        <p class="text-4xl text-center text-4xl pt-4 font-bold"> Shop </p>
+        <p class="text-center text-4xl pt-4 font-bold"> Shop </p>
         <div class="flex justify-around m-4 px-10">
           
             <!-- bronze card  -->
@@ -181,5 +133,6 @@
               </div>
         </div>
     </section>
+    
 </body>
 </html>
